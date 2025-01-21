@@ -17,7 +17,7 @@ type Deal struct {
 	gorm.Model
 	Title     string     `gorm:"varchar(255);not null" json:"title"`
 	Value     uint       `gorm:"varchar(255);not null" json:"value"`
-	Status    StatusDeal `gorm:"type:status_deal"`
+	Status    StatusDeal `sql:"type:ENUM('INITIATED', 'IN-PROGRESS', 'CLOSED-WON', 'CLOSED-LOST')" gorm:"column:deal_status"`
 	ContactID uint       `json:"contact_id"`
 	RepID     uint       `json:"rep_id"`
 }
