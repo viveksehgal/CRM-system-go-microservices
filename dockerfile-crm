@@ -9,4 +9,4 @@ EXPOSE 8082
 RUN go mod download
 RUN go build ./cmd/crm_core
 
-CMD ["go", "run", "./cmd/crm_core"]
+CMD ["go", "run", "./cmd/crm_core/main.go"]

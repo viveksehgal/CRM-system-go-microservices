@@ -27,7 +27,7 @@ const docTemplate = `{
                         "BearerAuth": []
                     }
                 ],
-                "description": "Получить список пользователей",
+                "description": "get list of users",
                 "consumes": [
                     "application/json"
                 ],
@@ -37,7 +37,7 @@ const docTemplate = `{
                 "tags": [
                     "admin"
                 ],
-                "summary": "Получить список пользователей",
+                "summary": "get list of users",
                 "parameters": [
                     {
                         "type": "string",
@@ -79,7 +79,7 @@ const docTemplate = `{
                         "BearerAuth": []
                     }
                 ],
-                "description": "Создать Пользователя",
+                "description": "create a user",
                 "consumes": [
                     "application/json"
                 ],
@@ -89,7 +89,7 @@ const docTemplate = `{
                 "tags": [
                     "admin"
                 ],
-                "summary": "Создать Пользователя",
+                "summary": "create a user",
                 "parameters": [
                     {
                         "description": "Create User",
@@ -124,7 +124,7 @@ const docTemplate = `{
                         "BearerAuth": []
                     }
                 ],
-                "description": "Поиск пользователя по имени",
+                "description": "search for a user by name",
                 "consumes": [
                     "application/json"
                 ],
@@ -134,7 +134,7 @@ const docTemplate = `{
                 "tags": [
                     "admin"
                 ],
-                "summary": "Поиск пользователя по имени",
+                "summary": "search for a user by name",
                 "parameters": [
                     {
                         "type": "string",
@@ -167,7 +167,7 @@ const docTemplate = `{
                         "BearerAuth": []
                     }
                 ],
-                "description": "Получить пользователя по id",
+                "description": "get user by id",
                 "consumes": [
                     "application/json"
                 ],
@@ -177,7 +177,7 @@ const docTemplate = `{
                 "tags": [
                     "admin"
                 ],
-                "summary": "Получить пользователя по id",
+                "summary": "get user by id",
                 "parameters": [
                     {
                         "type": "string",
@@ -208,7 +208,7 @@ const docTemplate = `{
                         "BearerAuth": []
                     }
                 ],
-                "description": "Редактировать пользователя по id",
+                "description": "edit user by id",
                 "consumes": [
                     "application/json"
                 ],
@@ -218,7 +218,7 @@ const docTemplate = `{
                 "tags": [
                     "admin"
                 ],
-                "summary": "Редактировать пользователя по id",
+                "summary": "edit user by id",
                 "parameters": [
                     {
                         "type": "string",
@@ -258,7 +258,7 @@ const docTemplate = `{
                         "BearerAuth": []
                     }
                 ],
-                "description": "Удалить пользователя по id",
+                "description": "delete user by id",
                 "consumes": [
                     "application/json"
                 ],
@@ -268,7 +268,7 @@ const docTemplate = `{
                 "tags": [
                     "admin"
                 ],
-                "summary": "Удалить пользователя по id",
+                "summary": "delete user by id",
                 "parameters": [
                     {
                         "type": "string",
@@ -296,7 +296,7 @@ const docTemplate = `{
         },
         "/v1/user/confirm/": {
             "post": {
-                "description": "Подтвердить пользователя по коду",
+                "description": "confirm user by code",
                 "consumes": [
                     "application/json"
                 ],
@@ -306,10 +306,10 @@ const docTemplate = `{
                 "tags": [
                     "auth"
                 ],
-                "summary": "Подтвердить пользователя по коду",
+                "summary": "confirm user by code",
                 "parameters": [
                     {
-                        "description": "Код",
+                        "description": "code",
                         "name": "inputCode",
                         "in": "body",
                         "required": true,
@@ -336,7 +336,7 @@ const docTemplate = `{
         },
         "/v1/user/login": {
             "post": {
-                "description": "Авторизовать пользователя с помощью signIn",
+                "description": "authorize user with signIn",
                 "consumes": [
                     "application/json"
                 ],
@@ -346,7 +346,7 @@ const docTemplate = `{
                 "tags": [
                     "auth"
                 ],
-                "summary": "Авторизовать пользователя с помощью signUp",
+                "summary": "authorize user with signIn",
                 "parameters": [
                     {
                         "description": "Authorize user",
@@ -381,7 +381,7 @@ const docTemplate = `{
                         "BearerAuth": []
                     }
                 ],
-                "description": "Получить информацию о себе",
+                "description": "get information about yourself",
                 "consumes": [
                     "application/json"
                 ],
@@ -391,7 +391,7 @@ const docTemplate = `{
                 "tags": [
                     "cabinet"
                 ],
-                "summary": "Получить информацию о себе",
+                "summary": "get information about yourself",
                 "responses": {
                     "200": {
                         "description": "OK",
@@ -413,7 +413,7 @@ const docTemplate = `{
                         "BearerAuth": []
                     }
                 ],
-                "description": "Поменять информацию о себе",
+                "description": "change information about yourself",
                 "consumes": [
                     "application/json"
                 ],
@@ -423,10 +423,10 @@ const docTemplate = `{
                 "tags": [
                     "cabinet"
                 ],
-                "summary": "Поменять информацию о себе",
+                "summary": "change information about yourself",
                 "parameters": [
                     {
-                        "description": "Поменять информацию о себе",
+                        "description": "change information about yourself",
                         "name": "body",
                         "in": "body",
                         "required": true,
@@ -453,7 +453,7 @@ const docTemplate = `{
         },
         "/v1/user/register": {
             "post": {
-                "description": "Зарегистрировать пользователя с помощью signUp",
+                "description": "register a user with signUp",
                 "consumes": [
                     "application/json"
                 ],
@@ -463,7 +463,7 @@ const docTemplate = `{
                 "tags": [
                     "auth"
                 ],
-                "summary": "Зарегистрировать пользователя с помощью signUp",
+                "summary": "register a user with signUp",
                 "parameters": [
                     {
                         "description": "Register user",

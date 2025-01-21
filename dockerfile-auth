@@ -9,4 +9,4 @@ EXPOSE 8081
 RUN go mod download
 RUN go build ./cmd/auth
 
-CMD ["go", "run", "./cmd/auth"]
+CMD ["go", "run", "./cmd/auth/main.go"]

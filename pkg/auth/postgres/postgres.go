@@ -4,6 +4,7 @@ import (
 	"crm_system/config/auth"
 	"crm_system/pkg/auth/logger"
 	"fmt"
+
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )
@@ -16,6 +17,8 @@ func ConnectDB(config *auth.Configuration, l *logger.Logger) *gorm.DB {
 		config.DB.Password,
 		config.DB.Name,
 	)
+	print("yo")
+	print(connectionStr)
 	db, err := gorm.Open(postgres.Open(connectionStr), &gorm.Config{})
 	if err != nil {
 		l.Fatal(err)

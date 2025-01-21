@@ -24,7 +24,7 @@
                         "BearerAuth": []
                     }
                 ],
-                "description": "Получить список пользователей",
+                "description": "get list of users",
                 "consumes": [
                     "application/json"
                 ],
@@ -34,7 +34,7 @@
                 "tags": [
                     "admin"
                 ],
-                "summary": "Получить список пользователей",
+                "summary": "get list of users",
                 "parameters": [
                     {
                         "type": "string",
@@ -76,7 +76,7 @@
                         "BearerAuth": []
                     }
                 ],
-                "description": "Создать Пользователя",
+                "description": "create a user",
                 "consumes": [
                     "application/json"
                 ],
@@ -86,7 +86,7 @@
                 "tags": [
                     "admin"
                 ],
-                "summary": "Создать Пользователя",
+                "summary": "create a user",
                 "parameters": [
                     {
                         "description": "Create User",
@@ -121,7 +121,7 @@
                         "BearerAuth": []
                     }
                 ],
-                "description": "Поиск пользователя по имени",
+                "description": "search user by name",
                 "consumes": [
                     "application/json"
                 ],
@@ -131,7 +131,7 @@
                 "tags": [
                     "admin"
                 ],
-                "summary": "Поиск пользователя по имени",
+                "summary": "search user by name",
                 "parameters": [
                     {
                         "type": "string",
@@ -164,7 +164,7 @@
                         "BearerAuth": []
                     }
                 ],
-                "description": "Получить пользователя по id",
+                "description": "get user by id",
                 "consumes": [
                     "application/json"
                 ],
@@ -174,7 +174,7 @@
                 "tags": [
                     "admin"
                 ],
-                "summary": "Получить пользователя по id",
+                "summary": "get user by id",
                 "parameters": [
                     {
                         "type": "string",
@@ -205,7 +205,7 @@
                         "BearerAuth": []
                     }
                 ],
-                "description": "Редактировать пользователя по id",
+                "description": "edit user by id",
                 "consumes": [
                     "application/json"
                 ],
@@ -215,7 +215,7 @@
                 "tags": [
                     "admin"
                 ],
-                "summary": "Редактировать пользователя по id",
+                "summary": "edit user by id",
                 "parameters": [
                     {
                         "type": "string",
@@ -255,7 +255,7 @@
                         "BearerAuth": []
                     }
                 ],
-                "description": "Удалить пользователя по id",
+                "description": "delete user by id",
                 "consumes": [
                     "application/json"
                 ],
@@ -265,7 +265,7 @@
                 "tags": [
                     "admin"
                 ],
-                "summary": "Удалить пользователя по id",
+                "summary": "delete user by id",
                 "parameters": [
                     {
                         "type": "string",
@@ -293,7 +293,7 @@
         },
         "/v1/user/confirm/": {
             "post": {
-                "description": "Подтвердить пользователя по коду",
+                "description": "confirm user by code",
                 "consumes": [
                     "application/json"
                 ],
@@ -303,10 +303,10 @@
                 "tags": [
                     "auth"
                 ],
-                "summary": "Подтвердить пользователя по коду",
+                "summary": "confirm user by code",
                 "parameters": [
                     {
-                        "description": "Код",
+                        "description": "code",
                         "name": "inputCode",
                         "in": "body",
                         "required": true,
@@ -333,7 +333,7 @@
         },
         "/v1/user/login": {
             "post": {
-                "description": "Авторизовать пользователя с помощью signIn",
+                "description": "authorize user with signIn",
                 "consumes": [
                     "application/json"
                 ],
@@ -343,7 +343,7 @@
                 "tags": [
                     "auth"
                 ],
-                "summary": "Авторизовать пользователя с помощью signUp",
+                "summary": "authorize user with signIn",
                 "parameters": [
                     {
                         "description": "Authorize user",
@@ -378,7 +378,7 @@
                         "BearerAuth": []
                     }
                 ],
-                "description": "Получить информацию о себе",
+                "description": "get information about yourself",
                 "consumes": [
                     "application/json"
                 ],
@@ -388,7 +388,7 @@
                 "tags": [
                     "cabinet"
                 ],
-                "summary": "Получить информацию о себе",
+                "summary": "get information about yourself",
                 "responses": {
                     "200": {
                         "description": "OK",
@@ -410,7 +410,7 @@
                         "BearerAuth": []
                     }
                 ],
-                "description": "Поменять информацию о себе",
+                "description": "change information about yourself",
                 "consumes": [
                     "application/json"
                 ],
@@ -420,10 +420,10 @@
                 "tags": [
                     "cabinet"
                 ],
-                "summary": "Поменять информацию о себе",
+                "summary": "change information about yourself",
                 "parameters": [
                     {
-                        "description": "Поменять информацию о себе",
+                        "description": "change information about yourself",
                         "name": "body",
                         "in": "body",
                         "required": true,
@@ -450,7 +450,7 @@
         },
         "/v1/user/register": {
             "post": {
-                "description": "Зарегистрировать пользователя с помощью signUp",
+                "description": "register user with signUp",
                 "consumes": [
                     "application/json"
                 ],
@@ -460,7 +460,7 @@
                 "tags": [
                     "auth"
                 ],
-                "summary": "Зарегистрировать пользователя с помощью signUp",
+                "summary": "register user with signUp",
                 "parameters": [
                     {
                         "description": "Register user",

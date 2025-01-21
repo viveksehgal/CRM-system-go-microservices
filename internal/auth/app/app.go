@@ -5,7 +5,7 @@ import (
 	"crm_system/internal/auth/controller/consumer"
 	"crm_system/internal/auth/controller/grpc"
 	middleware2 "crm_system/internal/auth/controller/http/middleware"
-	"crm_system/internal/auth/controller/http/v1"
+	v1 "crm_system/internal/auth/controller/http/v1"
 	_ "crm_system/internal/auth/docs"
 	repoPkg "crm_system/internal/auth/repository"
 	servicePkg "crm_system/internal/auth/service"
@@ -14,14 +14,15 @@ import (
 	httpserver2 "crm_system/pkg/auth/httpserver"
 	"crm_system/pkg/auth/logger"
 	"fmt"
-	"github.com/gin-contrib/cors"
-	"github.com/gin-gonic/gin"
-	swaggerFiles "github.com/swaggo/files"
-	ginSwagger "github.com/swaggo/gin-swagger"
 	"log"
 	"os"
 	"os/signal"
 	"syscall"
+
+	"github.com/gin-contrib/cors"
+	"github.com/gin-gonic/gin"
+	swaggerFiles "github.com/swaggo/files"
+	ginSwagger "github.com/swaggo/gin-swagger"
 )
 
 func Run(cfg *auth.Configuration) {
@@ -55,7 +56,7 @@ func Run(cfg *auth.Configuration) {
 		ExposeHeaders:    []string{"Content-Length"},
 		AllowCredentials: true,
 	}))
-	handler.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
+	handler.GET("/rocket/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
 
 	grpcService := grpc.NewService(l, repo, cfg)
 	grpcServer := grpc.NewServer(cfg.Grpc.Port, grpcService)

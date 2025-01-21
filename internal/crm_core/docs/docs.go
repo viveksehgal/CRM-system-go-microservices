@@ -27,7 +27,7 @@ const docTemplate = `{
                         "BearerAuth": []
                     }
                 ],
-                "description": "Получить список компаний",
+                "description": "get a list of companies",
                 "consumes": [
                     "application/json"
                 ],
@@ -37,7 +37,7 @@ const docTemplate = `{
                 "tags": [
                     "company"
                 ],
-                "summary": "Получить список компаний",
+                "summary": "get a list of companies",
                 "parameters": [
                     {
                         "type": "string",
@@ -79,7 +79,7 @@ const docTemplate = `{
                         "BearerAuth": []
                     }
                 ],
-                "description": "Создать Компанию",
+                "description": "create a company",
                 "consumes": [
                     "application/json"
                 ],
@@ -89,7 +89,7 @@ const docTemplate = `{
                 "tags": [
                     "company"
                 ],
-                "summary": "Создать Компанию",
+                "summary": "create a company",
                 "parameters": [
                     {
                         "description": "Create Company",
@@ -124,7 +124,7 @@ const docTemplate = `{
                         "BearerAuth": []
                     }
                 ],
-                "description": "Поиск компании по имени",
+                "description": "search for a company by name",
                 "consumes": [
                     "application/json"
                 ],
@@ -134,7 +134,7 @@ const docTemplate = `{
                 "tags": [
                     "company"
                 ],
-                "summary": "Поиск компании по имени",
+                "summary": "search for a company by name",
                 "parameters": [
                     {
                         "type": "string",
@@ -167,7 +167,7 @@ const docTemplate = `{
                         "BearerAuth": []
                     }
                 ],
-                "description": "Получить компанию по id",
+                "description": "get company by id",
                 "consumes": [
                     "application/json"
                 ],
@@ -177,7 +177,7 @@ const docTemplate = `{
                 "tags": [
                     "company"
                 ],
-                "summary": "Получить компанию по id",
+                "summary": "get company by id",
                 "parameters": [
                     {
                         "type": "string",
@@ -208,7 +208,7 @@ const docTemplate = `{
                         "BearerAuth": []
                     }
                 ],
-                "description": "Редактировать компанию по id",
+                "description": "edit company by id",
                 "consumes": [
                     "application/json"
                 ],
@@ -218,7 +218,7 @@ const docTemplate = `{
                 "tags": [
                     "company"
                 ],
-                "summary": "Редактировать компанию по id",
+                "summary": "edit company by id",
                 "parameters": [
                     {
                         "type": "string",
@@ -258,7 +258,7 @@ const docTemplate = `{
                         "BearerAuth": []
                     }
                 ],
-                "description": "Удалить компанию по id",
+                "description": "delete company by id",
                 "consumes": [
                     "application/json"
                 ],
@@ -268,7 +268,7 @@ const docTemplate = `{
                 "tags": [
                     "company"
                 ],
-                "summary": "Удалить компанию по id",
+                "summary": "delete company by id",
                 "parameters": [
                     {
                         "type": "string",
@@ -301,7 +301,7 @@ const docTemplate = `{
                         "BearerAuth": []
                     }
                 ],
-                "description": "Получить список контактов",
+                "description": "get contact list",
                 "consumes": [
                     "application/json"
                 ],
@@ -311,7 +311,7 @@ const docTemplate = `{
                 "tags": [
                     "contact"
                 ],
-                "summary": "Получить список контактов",
+                "summary": "get contact list",
                 "parameters": [
                     {
                         "type": "string",
@@ -353,7 +353,7 @@ const docTemplate = `{
                         "BearerAuth": []
                     }
                 ],
-                "description": "Создать Контакт",
+                "description": "create contact",
                 "consumes": [
                     "application/json"
                 ],
@@ -363,7 +363,7 @@ const docTemplate = `{
                 "tags": [
                     "contact"
                 ],
-                "summary": "Создать Контакт",
+                "summary": "create contact",
                 "parameters": [
                     {
                         "description": "Create Contact",
@@ -398,7 +398,7 @@ const docTemplate = `{
                         "BearerAuth": []
                     }
                 ],
-                "description": "Поиск контакта по имени",
+                "description": "search for a contact by name",
                 "consumes": [
                     "application/json"
                 ],
@@ -408,7 +408,7 @@ const docTemplate = `{
                 "tags": [
                     "contact"
                 ],
-                "summary": "Поиск контакта по имени",
+                "summary": "search for a contact by name",
                 "parameters": [
                     {
                         "type": "string",
@@ -441,7 +441,7 @@ const docTemplate = `{
                         "BearerAuth": []
                     }
                 ],
-                "description": "Получить контакт по id",
+                "description": "get contact by id",
                 "consumes": [
                     "application/json"
                 ],
@@ -451,7 +451,7 @@ const docTemplate = `{
                 "tags": [
                     "contact"
                 ],
-                "summary": "Получить контакт по id",
+                "summary": "get contact by id",
                 "parameters": [
                     {
                         "type": "string",
@@ -482,7 +482,7 @@ const docTemplate = `{
                         "BearerAuth": []
                     }
                 ],
-                "description": "Редактировать контакт по id",
+                "description": "edit contact by id",
                 "consumes": [
                     "application/json"
                 ],
@@ -492,7 +492,7 @@ const docTemplate = `{
                 "tags": [
                     "contact"
                 ],
-                "summary": "Редактировать контакт по id",
+                "summary": "edit contact by id",
                 "parameters": [
                     {
                         "type": "string",
@@ -532,7 +532,7 @@ const docTemplate = `{
                         "BearerAuth": []
                     }
                 ],
-                "description": "Удалить контакт по id",
+                "description": "delete contact by id",
                 "consumes": [
                     "application/json"
                 ],
@@ -542,7 +542,7 @@ const docTemplate = `{
                 "tags": [
                     "contact"
                 ],
-                "summary": "Удалить контакт по id",
+                "summary": "delete contact by id",
                 "parameters": [
                     {
                         "type": "string",
@@ -575,7 +575,7 @@ const docTemplate = `{
                         "BearerAuth": []
                     }
                 ],
-                "description": "Получить список соглашений",
+                "description": "get a list of deals",
                 "consumes": [
                     "application/json"
                 ],
@@ -585,7 +585,7 @@ const docTemplate = `{
                 "tags": [
                     "deal"
                 ],
-                "summary": "Получить список соглашений",
+                "summary": "get a list of deals",
                 "parameters": [
                     {
                         "type": "string",
@@ -627,7 +627,7 @@ const docTemplate = `{
                         "BearerAuth": []
                     }
                 ],
-                "description": "Создать Соглашение",
+                "description": "create a deal",
                 "consumes": [
                     "application/json"
                 ],
@@ -637,7 +637,7 @@ const docTemplate = `{
                 "tags": [
                     "deal"
                 ],
-                "summary": "Создать Соглашение",
+                "summary": "create a deal",
                 "parameters": [
                     {
                         "description": "Create deal",
@@ -672,7 +672,7 @@ const docTemplate = `{
                         "BearerAuth": []
                     }
                 ],
-                "description": "Поиск соглашений по имени",
+                "description": "search deal by name",
                 "consumes": [
                     "application/json"
                 ],
@@ -682,7 +682,7 @@ const docTemplate = `{
                 "tags": [
                     "deal"
                 ],
-                "summary": "Поиск соглашений по имени",
+                "summary": "search deal by name",
                 "parameters": [
                     {
                         "type": "string",
@@ -715,7 +715,7 @@ const docTemplate = `{
                         "BearerAuth": []
                     }
                 ],
-                "description": "Получить соглашение по id",
+                "description": "get deal by id",
                 "consumes": [
                     "application/json"
                 ],
@@ -725,7 +725,7 @@ const docTemplate = `{
                 "tags": [
                     "deal"
                 ],
-                "summary": "Получить соглашение по id",
+                "summary": "get deal by id",
                 "parameters": [
                     {
                         "type": "string",
@@ -756,7 +756,7 @@ const docTemplate = `{
                         "BearerAuth": []
                     }
                 ],
-                "description": "Редактировать соглашение по id",
+                "description": "edit deal by id",
                 "consumes": [
                     "application/json"
                 ],
@@ -766,7 +766,7 @@ const docTemplate = `{
                 "tags": [
                     "deal"
                 ],
-                "summary": "Редактировать соглашение по id",
+                "summary": "edit deal by id",
                 "parameters": [
                     {
                         "type": "string",
@@ -806,7 +806,7 @@ const docTemplate = `{
                         "BearerAuth": []
                     }
                 ],
-                "description": "Удалить соглашение по id",
+                "description": "delete deal by id",
                 "consumes": [
                     "application/json"
                 ],
@@ -816,7 +816,7 @@ const docTemplate = `{
                 "tags": [
                     "deal"
                 ],
-                "summary": "Удалить соглашение по id",
+                "summary": "delete deal by id",
                 "parameters": [
                     {
                         "type": "string",
@@ -849,7 +849,7 @@ const docTemplate = `{
                         "BearerAuth": []
                     }
                 ],
-                "description": "Создать Задание",
+                "description": "create a task",
                 "consumes": [
                     "application/json"
                 ],
@@ -859,7 +859,7 @@ const docTemplate = `{
                 "tags": [
                     "task"
                 ],
-                "summary": "Создать Задание",
+                "summary": "create a task",
                 "parameters": [
                     {
                         "description": "Create task",
@@ -894,7 +894,7 @@ const docTemplate = `{
                         "BearerAuth": []
                     }
                 ],
-                "description": "Получить историю изменений по заданию",
+                "description": "get change hisory of a task",
                 "consumes": [
                     "application/json"
                 ],
@@ -904,7 +904,7 @@ const docTemplate = `{
                 "tags": [
                     "task"
                 ],
-                "summary": "Получить историю изменений по заданию",
+                "summary": "get change history of a task",
                 "parameters": [
                     {
                         "type": "string",
@@ -937,7 +937,7 @@ const docTemplate = `{
                         "BearerAuth": []
                     }
                 ],
-                "description": "Получить список заданий",
+                "description": "get a list of tasks",
                 "consumes": [
                     "application/json"
                 ],
@@ -947,7 +947,7 @@ const docTemplate = `{
                 "tags": [
                     "task"
                 ],
-                "summary": "Получить список заданий",
+                "summary": "get a list of tasks",
                 "parameters": [
                     {
                         "type": "string",
@@ -998,7 +998,7 @@ const docTemplate = `{
                         "BearerAuth": []
                     }
                 ],
-                "description": "Поиск задание по имени",
+                "description": "search for a task by name",
                 "consumes": [
                     "application/json"
                 ],
@@ -1008,7 +1008,7 @@ const docTemplate = `{
                 "tags": [
                     "task"
                 ],
-                "summary": "Поиск задание по имени",
+                "summary": "search for a task by name",
                 "parameters": [
                     {
                         "type": "string",
@@ -1041,7 +1041,7 @@ const docTemplate = `{
                         "BearerAuth": []
                     }
                 ],
-                "description": "Проголосовать за задание",
+                "description": "vote for the task",
                 "consumes": [
                     "application/json"
                 ],
@@ -1051,7 +1051,7 @@ const docTemplate = `{
                 "tags": [
                     "task"
                 ],
-                "summary": "Проголосовать за задание",
+                "summary": "vote for the task",
                 "parameters": [
                     {
                         "description": "Create Vote",
@@ -1086,7 +1086,7 @@ const docTemplate = `{
                         "BearerAuth": []
                     }
                 ],
-                "description": "Получить задание по id",
+                "description": "get task by id",
                 "consumes": [
                     "application/json"
                 ],
@@ -1096,7 +1096,7 @@ const docTemplate = `{
                 "tags": [
                     "task"
                 ],
-                "summary": "Получить задание по id",
+                "summary": "get task by id",
                 "parameters": [
                     {
                         "type": "string",
@@ -1127,7 +1127,7 @@ const docTemplate = `{
                         "BearerAuth": []
                     }
                 ],
-                "description": "Редактировать задание по id",
+                "description": "edit task by id",
                 "consumes": [
                     "application/json"
                 ],
@@ -1137,7 +1137,7 @@ const docTemplate = `{
                 "tags": [
                     "task"
                 ],
-                "summary": "Редактировать задание по id",
+                "summary": "edit task by id",
                 "parameters": [
                     {
                         "type": "string",
@@ -1177,7 +1177,7 @@ const docTemplate = `{
                         "BearerAuth": []
                     }
                 ],
-                "description": "Удалить задание по id",
+                "description": "delete task by id",
                 "consumes": [
                     "application/json"
                 ],
@@ -1187,7 +1187,7 @@ const docTemplate = `{
                 "tags": [
                     "task"
                 ],
-                "summary": "Удалить задание по id",
+                "summary": "delete task by id",
                 "parameters": [
                     {
                         "type": "string",
@@ -1220,7 +1220,7 @@ const docTemplate = `{
                         "BearerAuth": []
                     }
                 ],
-                "description": "Получить список билетов",
+                "description": "get a list of all tickets",
                 "consumes": [
                     "application/json"
                 ],
@@ -1230,7 +1230,7 @@ const docTemplate = `{
                 "tags": [
                     "ticket"
                 ],
-                "summary": "Получить список билетов",
+                "summary": "get a list of all tickets",
                 "parameters": [
                     {
                         "type": "string",
@@ -1272,7 +1272,7 @@ const docTemplate = `{
                         "BearerAuth": []
                     }
                 ],
-                "description": "Создать Билет",
+                "description": "create ticket",
                 "consumes": [
                     "application/json"
                 ],
@@ -1282,7 +1282,7 @@ const docTemplate = `{
                 "tags": [
                     "ticket"
                 ],
-                "summary": "Создать Билет",
+                "summary": "create ticket",
                 "parameters": [
                     {
                         "description": "Create ticket",
@@ -1317,7 +1317,7 @@ const docTemplate = `{
                         "BearerAuth": []
                     }
                 ],
-                "description": "Поиск билета по имени",
+                "description": "search for a ticket by name",
                 "consumes": [
                     "application/json"
                 ],
@@ -1327,7 +1327,7 @@ const docTemplate = `{
                 "tags": [
                     "ticket"
                 ],
-                "summary": "Поиск билета по имени",
+                "summary": "search for a ticket by name",
                 "parameters": [
                     {
                         "type": "string",
@@ -1360,7 +1360,7 @@ const docTemplate = `{
                         "BearerAuth": []
                     }
                 ],
-                "description": "Получить билет по id",
+                "description": "get ticket by id",
                 "consumes": [
                     "application/json"
                 ],
@@ -1370,7 +1370,7 @@ const docTemplate = `{
                 "tags": [
                     "ticket"
                 ],
-                "summary": "Получить билет по id",
+                "summary": "get ticket by id",
                 "parameters": [
                     {
                         "type": "string",
@@ -1401,7 +1401,7 @@ const docTemplate = `{
                         "BearerAuth": []
                     }
                 ],
-                "description": "Редактировать билет по id",
+                "description": "edit ticket by id",
                 "consumes": [
                     "application/json"
                 ],
@@ -1411,7 +1411,7 @@ const docTemplate = `{
                 "tags": [
                     "ticket"
                 ],
-                "summary": "Редактировать билет по id",
+                "summary": "edit ticket by id",
                 "parameters": [
                     {
                         "type": "string",
@@ -1451,7 +1451,7 @@ const docTemplate = `{
                         "BearerAuth": []
                     }
                 ],
-                "description": "Удалить билет по id",
+                "description": "delete ticket by id",
                 "consumes": [
                     "application/json"
                 ],
@@ -1461,7 +1461,7 @@ const docTemplate = `{
                 "tags": [
                     "ticket"
                 ],
-                "summary": "Удалить билет по id",
+                "summary": "delete ticket by id",
                 "parameters": [
                     {
                         "type": "string",
